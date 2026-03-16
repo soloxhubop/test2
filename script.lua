@@ -573,11 +573,11 @@ local function launchMainScript()
         MakeSpeedRow("Steal Speed:", function() return SETTINGS.STEAL_SPEED  end, function(v) SETTINGS.STEAL_SPEED=v  end, 64)
         panel.Size = UDim2.new(0, 200, 0, 98)
     end
-    local gearLeft = Instance.new("TextButton", AutoLeftHUD); gearLeft.Size = UDim2.new(0,20,0,20); gearLeft.Position = UDim2.new(1,-22,0,2); gearLeft.BackgroundColor3 = Color3.fromRGB(0,0,0); gearLeft.BackgroundTransparency = 0.4; gearLeft.BorderSizePixel = 0; gearLeft.Text = "âš™ï¸"; gearLeft.TextColor3 = Color3.fromRGB(255,255,255)
+    local gearLeft = Instance.new("TextButton", AutoLeftHUD); gearLeft.Size = UDim2.new(0,20,0,20); gearLeft.Position = UDim2.new(1,-22,0,2); gearLeft.BackgroundColor3 = Color3.fromRGB(0,0,0); gearLeft.BackgroundTransparency = 0.4; gearLeft.BorderSizePixel = 0; gearLeft.Text = "⚙️"; gearLeft.TextColor3 = Color3.fromRGB(255,255,255)
     gearLeft.Font = Enum.Font.GothamBold; gearLeft.TextSize = 14; gearLeft.AutoButtonColor = false; gearLeft.ZIndex = 7; Instance.new("UICorner", gearLeft).CornerRadius = UDim.new(0.5, 0)
     gearLeft.MouseButton1Click:Connect(function() buildSpeedPanel(AutoLeftHUD) end)
     local gearRight = Instance.new("TextButton", AutoRightHUD); gearRight.Size = UDim2.new(0,20,0,20); gearRight.Position = UDim2.new(1,-22,0,2); gearRight.BackgroundColor3 = Color3.fromRGB(0,0,0); gearRight.BackgroundTransparency = 0.4; gearRight.BorderSizePixel = 0
-    gearRight.Text = "âš™ï¸"; gearRight.TextColor3 = Color3.fromRGB(255,255,255); gearRight.Font = Enum.Font.GothamBold; gearRight.TextSize = 14; gearRight.AutoButtonColor = false; gearRight.ZIndex = 7; Instance.new("UICorner", gearRight).CornerRadius = UDim.new(0.5, 0)
+    gearRight.Text = "⚙️"; gearRight.TextColor3 = Color3.fromRGB(255,255,255); gearRight.Font = Enum.Font.GothamBold; gearRight.TextSize = 14; gearRight.AutoButtonColor = false; gearRight.ZIndex = 7; Instance.new("UICorner", gearRight).CornerRadius = UDim.new(0.5, 0)
     gearRight.MouseButton1Click:Connect(function() buildSpeedPanel(AutoRightHUD) end)
     local TauntHUD,    setTauntState    = MakeHUDButton("Taunt","TAUNT",function(on)
         SETTINGS.TAUNT_ON=on
